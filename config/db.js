@@ -4,6 +4,7 @@ const connectWithDb = () => {
     mongoose.connect(process.env.DB_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        console.log('conneted')
     })
     .then(console.log(`DB Got Connected`))
     .catch(error => {
