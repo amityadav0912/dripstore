@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Bigpromise = require('../middlewares/bigpromise');
+const Bigpromise = require('../middlewares/bigPromise');
 
 exports.sendStripeKey = Bigpromise(async (req, res, next) => {
 const {sendStripeKey,
